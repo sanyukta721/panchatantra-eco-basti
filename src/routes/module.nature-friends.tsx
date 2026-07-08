@@ -98,7 +98,8 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       bg: dovesBg,
       en: "One day, they saw grains scattered on the ground. Hungry, they flew down to eat — but a cruel hunter had hidden a big net there.",
       hi: "एक दिन उन्होंने ज़मीन पर अनाज बिखरा देखा। भूख से वे नीचे उतरे — पर वहाँ एक क्रूर बहेलिये ने बड़ा जाल छिपा रखा था।",
-      },
+      characters: [],
+    },
     {
       bg: dovesBg,
       en: "The whole flock was trapped! The doves flapped and cried in fear. Chitragreeva said calmly, ‘If we panic alone, we lose. If we lift the net together, we can fly!’",
