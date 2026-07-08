@@ -104,12 +104,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       bg: dovesBg,
       en: "The whole flock was trapped! The doves flapped and cried in fear. Chitragreeva said calmly, ‘If we panic alone, we lose. If we lift the net together, we can fly!’",
       hi: "पूरा झुंड फँस गया! कबूतर डर से फड़फड़ाने और रोने लगे। चित्रग्रीव ने शांति से कहा, ‘अकेले घबराए तो हार जाएँगे। साथ मिलकर जाल उठाएँ तो उड़ सकते हैं!’",
-      characters: [
-        { src: dove, className: "absolute bottom-16 left-[25%] h-20 md:h-28 animate-bob" },
-        { src: dove, className: "absolute bottom-16 left-[45%] h-20 md:h-28 animate-bob", style: { animationDelay: "-0.4s" } },
-        { src: dove, className: "absolute bottom-16 left-[65%] h-20 md:h-28 animate-bob", style: { animationDelay: "-0.7s" } },
-      ],
-      extra: <span aria-hidden className="absolute bottom-6 left-1/2 -translate-x-1/2 text-7xl md:text-8xl">🕸️</span>,
+      characters: [],
     },
     {
       bg: skyBg,
