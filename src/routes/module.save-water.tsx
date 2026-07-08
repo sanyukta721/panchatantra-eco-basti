@@ -91,8 +91,8 @@ function StoryBook({ onDone }: { onDone: () => void }) {
     },
     {
       bg: droughtBg,
-      en: "At last, near a quiet garden, he spotted a clay pot. He flew down, hopeful — but only a little water rested at the very bottom.",
-      hi: "आख़िरकार, एक शांत बगीचे के पास उसे एक मिट्टी का घड़ा दिखा। वह उम्मीद से नीचे उतरा — पर घड़े में बहुत नीचे थोड़ा-सा ही पानी था।",
+      en: "At last, he spotted a clay pot. He flew down, hopeful — but only a little water rested at the very bottom.",
+      hi: "आख़िरकार, उसे एक मिट्टी का घड़ा दिखा। वह उम्मीद से नीचे उतरा — पर घड़े में बहुत नीचे थोड़ा-सा ही पानी था।",
       characters: [
         { src: crow, className: "absolute top-16 left-[42%] h-24 md:h-32 animate-fly" },
       ],
