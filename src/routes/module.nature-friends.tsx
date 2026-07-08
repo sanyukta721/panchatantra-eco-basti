@@ -98,7 +98,11 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       bg: dovesBg,
       en: "One day, they saw grains scattered on the ground. Hungry, they flew down to eat — but a cruel hunter had hidden a big net there.",
       hi: "एक दिन उन्होंने ज़मीन पर अनाज बिखरा देखा। भूख से वे नीचे उतरे — पर वहाँ एक क्रूर बहेलिये ने बड़ा जाल छिपा रखा था।",
-      
+      characters: [
+        { src: dove, className: "absolute bottom-12 left-[25%] h-20 md:h-28 animate-bob" },
+        { src: dove, className: "absolute bottom-10 left-[50%] h-20 md:h-28 animate-bob", style: { animationDelay: "-0.3s" } },
+        { src: dove, className: "absolute bottom-14 left-[70%] h-20 md:h-28 animate-bob", style: { animationDelay: "-0.6s" } },
+      ],
       extra: <span aria-hidden className="absolute bottom-4 left-1/2 -translate-x-1/2 text-6xl md:text-7xl animate-pop">🕸️</span>,
     },
     {
