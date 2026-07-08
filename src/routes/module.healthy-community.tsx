@@ -14,6 +14,7 @@ import lakeBg from "@/assets/scene-lake.jpg";
 import droughtBg from "@/assets/scene-drought.jpg";
 import forestGroundBg from "@/assets/forest-ground.jpg";
 import deerNetBg from "@/assets/deer-net.jpg";
+import deerMouseNetBg from "@/assets/deer-mouse-net.jpg";
 import { ArrowLeft, ArrowRight, Check, Sparkles, Star, Trophy, X } from "lucide-react";
 
 export const Route = createFileRoute("/module/healthy-community")({
@@ -96,12 +97,10 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       bg: deerNetBg,
       en: "One morning, Deer did not come. The friends grew worried. Crow flew up high and saw Deer caught in a hunter's net near the forest edge!",
       hi: "एक सुबह हिरण नहीं आया। मित्र चिंतित हो गए। कौआ ऊँचा उड़ा और देखा — हिरण जंगल के किनारे शिकारी के जाल में फँसा है!",
-      characters: [
-        { src: crow, className: "absolute top-6 left-[25%] h-20 md:h-28 animate-fly" },
-      ],
+      characters: [],
     },
     {
-      bg: droughtBg,
+      bg: forestGroundBg, 
       en: "‘Alone I cannot cut this net,’ said Crow. ‘But together we can!’ Mouse hurried on his tiny feet, ready to nibble every knot. Tortoise walked steadily behind.",
       hi: "‘अकेले मैं जाल नहीं काट सकता,’ कौआ बोला। ‘पर मिलकर हम कर सकते हैं!’ चूहा अपने नन्हे पैरों से दौड़ पड़ा — हर गाँठ कुतरने को तैयार। कछुआ पीछे-पीछे धीरे चला।",
       characters: [
@@ -111,17 +110,13 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       ],
     },
     {
-      bg: villageBg,
+      bg: deerMouseNetBg,
       en: "Mouse nibbled every knot and freed Deer. Just then the hunter arrived — but slow Tortoise was still there! The hunter grabbed him in a sack.",
       hi: "चूहे ने हर गाँठ कुतर दी और हिरण को छुड़ा लिया। तभी शिकारी आ पहुँचा — पर धीरे-चलने वाला कछुआ अभी वहीं था! शिकारी ने उसे थैले में पकड़ लिया।",
-      characters: [
-        { src: deer, className: "absolute bottom-6 left-[15%] h-24 md:h-32 animate-cheer" },
-        { src: mouse, className: "absolute bottom-6 left-[42%] h-16 md:h-24 animate-walk" },
-      ],
-      extra: <span aria-hidden className="absolute bottom-6 right-[10%] text-6xl md:text-7xl animate-bob">🎒</span>,
+      characters: [],
     },
     {
-      bg: skyBg,
+      bg: forestGroundBg,
       en: "‘Do not worry — teamwork will save Tortoise too!’ said Deer. Deer lay still, pretending to be hurt. The hunter dropped the sack and ran to catch Deer.",
       hi: "‘चिंता मत करो — सहयोग कछुए को भी बचाएगा!’ हिरण बोला। हिरण घायल होने का नाटक करके ज़मीन पर लेट गया। शिकारी थैला छोड़कर हिरण की ओर दौड़ पड़ा।",
       characters: [
@@ -130,7 +125,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       ],
     },
     {
-      bg: lakeBg,
+      bg: forestGroundBg, 
       en: "Quickly Mouse nibbled the sack open and freed Tortoise. Crow cawed, Deer sprang up, and all four friends escaped safely — together.",
       hi: "फुर्ती से चूहे ने थैला कुतरकर कछुए को छुड़ा लिया। कौआ काँव-काँव करने लगा, हिरण उछल पड़ा, और चारों मित्र मिलकर सुरक्षित निकल गए।",
       characters: [
