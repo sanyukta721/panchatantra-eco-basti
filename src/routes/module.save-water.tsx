@@ -90,7 +90,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       ],
     },
     {
-      bg: skyBg,
+      bg: droughtBg,
       en: "At last, near a quiet garden, he spotted a clay pot. He flew down, hopeful — but only a little water rested at the very bottom.",
       hi: "आख़िरकार, एक शांत बगीचे के पास उसे एक मिट्टी का घड़ा दिखा। वह उम्मीद से नीचे उतरा — पर घड़े में बहुत नीचे थोड़ा-सा ही पानी था।",
       characters: [
@@ -99,7 +99,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <Pot fillPct={12} />,
     },
     {
-      bg: lakeBg,
+      bg: droughtBg,
       en: "He stretched his beak in — but it would not reach. He thought and thought. Then he saw small pebbles nearby, and an idea sparkled in his eyes!",
       hi: "उसने चोंच अंदर डाली — पर पानी तक नहीं पहुँची। वह सोचता रहा। तभी पास में छोटे-छोटे कंकड़ दिखे, और उसकी आँखों में एक विचार चमका!",
       characters: [
@@ -108,7 +108,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <Pot fillPct={18} />,
     },
     {
-      bg: lakeBg,
+      bg: droughtBg,
       en: "Tap the pebbles to help the crow — drop them into the pot, one by one!",
       hi: "कौए की मदद करो — कंकड़ पर टैप करके एक-एक करके घड़े में डालो!",
       characters: [
@@ -117,7 +117,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <PebbleDrop pebbles={pebbles} onDrop={() => setPebbles((p) => Math.min(6, p + 1))} />,
     },
     {
-      bg: lakeBg,
+      bg: droughtBg,
       en: "Slowly, slowly, the water rose to the top. The clever crow drank happily. Every drop had been saved!",
       hi: "धीरे-धीरे पानी ऊपर आ गया। चतुर कौए ने ख़ुशी-ख़ुशी पानी पिया। हर बूँद बच गई!",
       characters: [
