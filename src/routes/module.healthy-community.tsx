@@ -12,6 +12,8 @@ import villageBg from "@/assets/village-bg.jpg";
 import skyBg from "@/assets/scene-sky.jpg";
 import lakeBg from "@/assets/scene-lake.jpg";
 import droughtBg from "@/assets/scene-drought.jpg";
+import forestGroundBg from "@/assets/forest-ground.jpg";
+import deerNetBg from "@/assets/deer-net.jpg";
 import { ArrowLeft, ArrowRight, Check, Sparkles, Star, Trophy, X } from "lucide-react";
 
 export const Route = createFileRoute("/module/healthy-community")({
@@ -80,7 +82,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
   const g = useGame();
   const scenes: Scene[] = useMemo(() => [
     {
-      bg: lakeBg,
+      bg: forestGroundBg,
       en: "Near Eco-Basti's lake lived four best friends — a wise Deer, a clever Crow, a tiny Mouse and a kind Tortoise. Every day they met to share stories and food.",
       hi: "इको-बस्ती के तालाब के पास चार पक्के मित्र रहते थे — बुद्धिमान हिरण, चतुर कौआ, नन्हा चूहा और दयालु कछुआ। हर दिन वे मिलकर कहानियाँ और भोजन बाँटते थे।",
       characters: [
@@ -91,14 +93,12 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       ],
     },
     {
-      bg: villageBg,
+      bg: deerNetBg,
       en: "One morning, Deer did not come. The friends grew worried. Crow flew up high and saw Deer caught in a hunter's net near the forest edge!",
       hi: "एक सुबह हिरण नहीं आया। मित्र चिंतित हो गए। कौआ ऊँचा उड़ा और देखा — हिरण जंगल के किनारे शिकारी के जाल में फँसा है!",
       characters: [
         { src: crow, className: "absolute top-6 left-[25%] h-20 md:h-28 animate-fly" },
-        { src: deer, className: "absolute bottom-8 right-[15%] h-24 md:h-32 animate-bob" },
       ],
-      extra: <span aria-hidden className="absolute bottom-6 right-[10%] text-7xl md:text-8xl">🕸️</span>,
     },
     {
       bg: droughtBg,
