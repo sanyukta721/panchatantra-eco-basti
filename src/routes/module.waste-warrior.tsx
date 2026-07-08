@@ -10,6 +10,7 @@ import lakeBg from "@/assets/scene-lake.jpg";
 import skyBg from "@/assets/scene-sky.jpg";
 import droughtBg from "@/assets/scene-drought.jpg";
 import banyanBg from "@/assets/banyantree.jpg";
+import forestGroundBg from "@/assets/forest-ground.jpg";
 import { ArrowLeft, ArrowRight, Check, Recycle, X } from "lucide-react";
 
 export const Route = createFileRoute("/module/waste-warrior")({
@@ -92,7 +93,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       ],
     },
     {
-      bg: villageBg,
+      bg: banyanBg,
       en: "Every time the crows laid eggs, the greedy snake slid up and swallowed them. The crows grew very sad and afraid.",
       hi: "जब भी कौए अंडे देते, लालची साँप ऊपर चढ़कर उन्हें निगल जाता। कौए बहुत दुखी और डरे रहते थे।",
       characters: [
@@ -102,7 +103,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <span aria-hidden className="absolute bottom-16 left-1/2 -translate-x-1/2 text-5xl md:text-6xl animate-floaty">🐍</span>,
     },
     {
-      bg: lakeBg,
+      bg: forestGroundBg,
       en: "The crows flew to their wise friend, the old jackal. He thought carefully and said, ‘Do not fight the snake with your beaks. Use your cleverness — use a plan.’",
       hi: "कौए अपने बुद्धिमान मित्र, बूढ़े सियार के पास उड़कर गए। उसने ध्यान से सोचकर कहा, ‘चोंच से मत लड़ो। बुद्धि से — योजना से काम लो।’",
       characters: [
@@ -112,7 +113,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <span aria-hidden className="absolute bottom-10 right-10 text-6xl md:text-7xl animate-bob">🦊</span>,
     },
     {
-      bg: villageBg,
+      bg: forestGroundBg,
       en: "‘Fly to the palace pond,’ the jackal said. ‘Pick up the princess’s golden necklace and drop it near the snake’s hollow. The guards will do the rest!’",
       hi: "‘राजमहल के तालाब पर उड़ो,’ सियार बोला। ‘राजकुमारी का सोने का हार उठाकर साँप की कोटर के पास गिरा दो। बाकी काम पहरेदार कर देंगे!’",
       characters: [
@@ -121,7 +122,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <span aria-hidden className="absolute bottom-12 right-[20%] text-5xl md:text-6xl animate-floaty">👑</span>,
     },
     {
-      bg: droughtBg,
+      bg: banyanBg,
       en: "The clever crows did exactly that. The guards followed the shining necklace, saw the snake, and drove it far away from the tree forever.",
       hi: "चतुर कौओं ने ठीक वैसा ही किया। पहरेदार चमकते हार के पीछे-पीछे पेड़ तक पहुँचे, साँप को देखा और उसे हमेशा के लिए दूर भगा दिया।",
       characters: [
