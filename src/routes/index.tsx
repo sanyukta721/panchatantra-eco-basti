@@ -9,7 +9,7 @@ function Splash() {
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[oklch(0.85_0.09_235)]">
       <img
-        src="/splash.png"
+        src={splashAsset.url}
         alt="Panchatantra Eco-Basti"
         className="absolute inset-0 h-full w-full object-cover object-center select-none"
         draggable={false}

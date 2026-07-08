@@ -15,6 +15,7 @@ import { Route as ModuleWasteWarriorRouteImport } from './routes/module.waste-wa
 import { Route as ModuleSaveWaterRouteImport } from './routes/module.save-water'
 import { Route as ModuleNatureFriendsRouteImport } from './routes/module.nature-friends'
 import { Route as ModuleHealthyMeRouteImport } from './routes/module.healthy-me'
+import { Route as ModuleHealthyCommunityRouteImport } from './routes/module.healthy-community'
 
 const HomeRoute = HomeRouteImport.update({
   id: '/home',
@@ -46,10 +47,16 @@ const ModuleHealthyMeRoute = ModuleHealthyMeRouteImport.update({
   path: '/module/healthy-me',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ModuleHealthyCommunityRoute = ModuleHealthyCommunityRouteImport.update({
+  id: '/module/healthy-community',
+  path: '/module/healthy-community',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/home': typeof HomeRoute
+  '/module/healthy-community': typeof ModuleHealthyCommunityRoute
   '/module/healthy-me': typeof ModuleHealthyMeRoute
   '/module/nature-friends': typeof ModuleNatureFriendsRoute
   '/module/save-water': typeof ModuleSaveWaterRoute
@@ -58,6 +65,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/home': typeof HomeRoute
+  '/module/healthy-community': typeof ModuleHealthyCommunityRoute
   '/module/healthy-me': typeof ModuleHealthyMeRoute
   '/module/nature-friends': typeof ModuleNatureFriendsRoute
   '/module/save-water': typeof ModuleSaveWaterRoute
@@ -67,6 +75,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/home': typeof HomeRoute
+  '/module/healthy-community': typeof ModuleHealthyCommunityRoute
   '/module/healthy-me': typeof ModuleHealthyMeRoute
   '/module/nature-friends': typeof ModuleNatureFriendsRoute
   '/module/save-water': typeof ModuleSaveWaterRoute
@@ -77,6 +86,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/home'
+    | '/module/healthy-community'
     | '/module/healthy-me'
     | '/module/nature-friends'
     | '/module/save-water'
@@ -85,6 +95,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/home'
+    | '/module/healthy-community'
     | '/module/healthy-me'
     | '/module/nature-friends'
     | '/module/save-water'
@@ -93,6 +104,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/home'
+    | '/module/healthy-community'
     | '/module/healthy-me'
     | '/module/nature-friends'
     | '/module/save-water'
@@ -102,6 +114,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   HomeRoute: typeof HomeRoute
+  ModuleHealthyCommunityRoute: typeof ModuleHealthyCommunityRoute
   ModuleHealthyMeRoute: typeof ModuleHealthyMeRoute
   ModuleNatureFriendsRoute: typeof ModuleNatureFriendsRoute
   ModuleSaveWaterRoute: typeof ModuleSaveWaterRoute
@@ -152,12 +165,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ModuleHealthyMeRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/module/healthy-community': {
+      id: '/module/healthy-community'
+      path: '/module/healthy-community'
+      fullPath: '/module/healthy-community'
+      preLoaderRoute: typeof ModuleHealthyCommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   HomeRoute: HomeRoute,
+  ModuleHealthyCommunityRoute: ModuleHealthyCommunityRoute,
   ModuleHealthyMeRoute: ModuleHealthyMeRoute,
   ModuleNatureFriendsRoute: ModuleNatureFriendsRoute,
   ModuleSaveWaterRoute: ModuleSaveWaterRoute,

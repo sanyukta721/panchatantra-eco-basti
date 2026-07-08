@@ -30,7 +30,7 @@ const NODES: Node[] = [
   { id: "save-water", character: crow, name: { en: "Save Water", hi: "जल बचाओ" }, color: "oklch(0.65 0.18 235)", pos: { top: "34%", left: "20%" }, charPos: { top: "18%", left: "6%" }, anim: "animate-fly", route: "/module/save-water" },
     { id: "waste-warrior", character: mouse, name: { en: "Waste Warrior", hi: "कचरा योद्धा" }, color: "oklch(0.55 0.22 300)", pos: { top: "68%", left: "18%" }, charPos: { top: "58%", left: "6%" }, anim: "animate-walk", route: "/module/waste-warrior" },
   { id: "nature-friends", character: deer, name: { en: "Nature Friends", hi: "प्रकृति मित्र" }, color: "oklch(0.7 0.18 195)", pos: { top: "72%", left: "48%" }, charPos: { top: "56%", left: "44%" }, anim: "animate-floaty", route: "/module/nature-friends" },
-  { id: "healthy-community", character: dove, name: { en: "Healthy Community", hi: "स्वस्थ समुदाय" }, color: "oklch(0.65 0.24 20)", pos: { top: "62%", left: "78%" }, charPos: { top: "48%", left: "82%" }, anim: "animate-fly" },
+  { id: "healthy-community", character: dove, name: { en: "Healthy Community", hi: "स्वस्थ समुदाय" }, color: "oklch(0.65 0.24 20)", pos: { top: "62%", left: "78%" }, charPos: { top: "48%", left: "82%" }, anim: "animate-fly", route: "/module/healthy-community" },
 ];
 
 function HomeMap() {
@@ -121,7 +121,7 @@ function ModuleCard({ node, unlocked, done, lang }: { node: Node; unlocked: bool
     </div>
   );
   if (unlocked && node.route) {
-    return <Link to={node.route as "/module/healthy-me" | "/module/save-water" | "/module/waste-warrior" | "/module/nature-friends"}>{content}</Link>;
+    return <Link to={node.route as "/module/healthy-me" | "/module/save-water" | "/module/waste-warrior" | "/module/nature-friends" | "/module/healthy-community"}>{content}</Link>;
   }
   return <div aria-disabled>{content}</div>;
 }
