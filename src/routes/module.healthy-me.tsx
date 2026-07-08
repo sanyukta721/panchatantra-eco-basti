@@ -245,12 +245,12 @@ function NeemPractice({ onNext }: { onNext: () => void }) {
       hi: "सारे दाँतों पर 2 मिनट तक छोटे-छोटे गोलाकार गति में दातुन घुमाओ।",
     },
     {
-      en: "Rinse your mouth with clean water. Cut off the used tip after every use.",
-      hi: "मुँह को साफ़ पानी से धोओ। हर बार उपयोग के बाद इस्तेमाल किया सिरा काट दो।",
+      en: "After brushing, split the used end into two soft strips. Rub the strips together to smooth them, then use them gently to clean your tongue.",
+      hi: "ब्रश करने के बाद चबाए हुए सिरे को दो भागों में बाँटो। दोनों हिस्सों को आपस में रगड़कर मुलायम करो और उनसे धीरे-धीरे अपनी जीभ साफ करो।",
     },
     {
-      en: "Change your toothbrush every 3 months — a worn-out brush cannot clean your teeth properly!",
-      hi: "हर 3 महीने में अपना टूथब्रश बदलो — घिसा-पिटा ब्रश दाँत ठीक से साफ़ नहीं करता!",
+      en: "After cleaning your tongue, throw the used neem twig away safely. For daily oral hygiene, also remember to replace a worn-out toothbrush every 3 months.",
+      hi: "जीभ साफ करने के बाद इस्तेमाल किया हुआ नीम का दातून सुरक्षित रूप से फेंक दो। यदि टूथब्रश का उपयोग करते हो, तो उसे हर 3 महीने में बदलना भी याद रखो।",
     },
   ];
   const [i, setI] = useState(0);
