@@ -9,6 +9,7 @@ import villageBg from "@/assets/village-bg.jpg";
 import lakeBg from "@/assets/scene-lake.jpg";
 import skyBg from "@/assets/scene-sky.jpg";
 import droughtBg from "@/assets/scene-drought.jpg";
+import banyanBg from "@/assets/banyantree.jpg";
 import { ArrowLeft, ArrowRight, Check, Recycle, X } from "lucide-react";
 
 export const Route = createFileRoute("/module/waste-warrior")({
@@ -82,7 +83,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
 
   const scenes: Scene[] = useMemo(() => [
     {
-      bg: skyBg,
+      bg: banyanBg,
       en: "In a tall banyan tree in Eco-Basti, a pair of crows had built a happy nest. But a wicked snake lived in a hollow of the same tree.",
       hi: "इको-बस्ती के एक ऊँचे बरगद पर कौओं के जोड़े ने ख़ुशी-ख़ुशी घोंसला बनाया था। पर उसी पेड़ की एक कोटर में एक दुष्ट साँप भी रहता था।",
       characters: [
