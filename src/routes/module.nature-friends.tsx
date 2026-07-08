@@ -10,6 +10,8 @@ import villageBg from "@/assets/village-bg.jpg";
 import skyBg from "@/assets/scene-sky.jpg";
 import lakeBg from "@/assets/scene-lake.jpg";
 import droughtBg from "@/assets/scene-drought.jpg";
+import dovesBg from "@/assets/doves-net.jpg";
+import forestGroundBg from "@/assets/forest-ground.jpg";
 import { ArrowLeft, ArrowRight, Check, Leaf, X } from "lucide-react";
 
 export const Route = createFileRoute("/module/nature-friends")({
@@ -93,7 +95,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       ],
     },
     {
-      bg: villageBg,
+      bg: dovesBg,
       en: "One day, they saw grains scattered on the ground. Hungry, they flew down to eat — but a cruel hunter had hidden a big net there.",
       hi: "एक दिन उन्होंने ज़मीन पर अनाज बिखरा देखा। भूख से वे नीचे उतरे — पर वहाँ एक क्रूर बहेलिये ने बड़ा जाल छिपा रखा था।",
       characters: [
@@ -104,7 +106,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <span aria-hidden className="absolute bottom-4 left-1/2 -translate-x-1/2 text-6xl md:text-7xl animate-pop">🕸️</span>,
     },
     {
-      bg: villageBg,
+      bg: dovesBg,
       en: "The whole flock was trapped! The doves flapped and cried in fear. Chitragreeva said calmly, ‘If we panic alone, we lose. If we lift the net together, we can fly!’",
       hi: "पूरा झुंड फँस गया! कबूतर डर से फड़फड़ाने और रोने लगे। चित्रग्रीव ने शांति से कहा, ‘अकेले घबराए तो हार जाएँगे। साथ मिलकर जाल उठाएँ तो उड़ सकते हैं!’",
       characters: [
@@ -127,7 +129,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       extra: <span aria-hidden className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl md:text-7xl animate-floaty">🕸️</span>,
     },
     {
-      bg: lakeBg,
+      bg: forestGroundBg,
       en: "They flew to their friend, the wise mouse Hiranyaka. ‘Please help us, dear friend!’ said Chitragreeva. The kind mouse smiled and began to nibble.",
       hi: "वे अपने मित्र, बुद्धिमान चूहे हिरण्यक के पास उड़ गए। ‘मित्र, हमारी मदद करो!’ चित्रग्रीव बोला। दयालु चूहा मुस्कुराया और जाल कुतरने लगा।",
       characters: [
@@ -137,7 +139,7 @@ function StoryBook({ onDone }: { onDone: () => void }) {
       ],
     },
     {
-      bg: droughtBg,
+      bg: forestGroundBg,
       en: "One by one, the mouse cut every knot of the net and freed each dove. The whole flock flew away together, safe and free.",
       hi: "एक-एक करके चूहे ने जाल की हर गाँठ काटी और हर कबूतर को आज़ाद किया। पूरा झुंड साथ-साथ, सुरक्षित और आज़ाद, उड़ गया।",
       characters: [
